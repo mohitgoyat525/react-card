@@ -1,5 +1,6 @@
 import React from 'react'
 import madara from '../assets/images/png/madara.jpg'
+import CommonHeading from './common/CommonHeading'
 const Cards = () => {
   return (
       <>
@@ -9,7 +10,9 @@ const Cards = () => {
               <h2 className='text-4xl font-semibold text-center pt-3'>Ghost of Uchhia Madara Uchhia</h2>
               <p className='text-2xl font-medium italic text-center pt-3'>Wake up to reality nothing ever goes as you plan in this curse world </p>
 
-              </div>
+        </div>
+        <CommonHeading heading="Accept" headingSpan="Accept"/>
+        
               </div>
       </>
   )
