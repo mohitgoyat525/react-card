@@ -1,10 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import warrior from "../assets/images/png/warrior.jpg"
+import warrior from "../../assets/images/png/warrior.jpg"
 const MySwiper = () => {
 
-    return (
+  return (
+    <div>
+      <h2 className="text-center text-purple-800 text-3xl font-medium">
+        Swiper-slider
+      </h2>
       <Swiper
         spaceBetween={50}
         slidesPerView={3}
@@ -60,7 +64,8 @@ const MySwiper = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-    );
+    </div>
+  );
 };
 
 export default MySwiper; 
