@@ -1,15 +1,19 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Cards from '../src/components/Cards'
-import MySlider from './components/MySlider';
-import MySwiper from './components/Swiper';
+import Home from './components/view/Home';
+import SliderPage from './components/view/SliderPage';
+
 
 function App() {
   return (
     <div>
-      <Cards />
-      <MySlider />
-      <MySwiper/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/slider' element={<SliderPage/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
